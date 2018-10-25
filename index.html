@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--meta标签-->
+    <meta name="viewport"
+          content="width=device-width,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no">
+    <!--引入css样式-->
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <!--字体图标-->
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_882396_eam2k3hpbh.css">
+   <!--快速点击-->
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+
+    <title>wyyx</title>
+    <!--三秒延迟-->
+    <script type="text/javascript">
+      if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+        }, false);
+      }
+      if(!window.Promise) {
+        document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+      }
+    </script>
+
+  </head>
+  <body style="overflow-x:hidden">
+  <body>
+  <script type="text/javascript">
+    (function(){
+      //移动端屏幕宽（布局视口）
+      var width = document.documentElement.clientWidth;
+      var styleNode = document.createElement('style');
+      //设置字体大小
+      styleNode.innerHTML = 'html{font-size: '+ width/16 +'px !important;}';
+      document.head.appendChild(styleNode);
+    })();
+
+  </script>
+
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
